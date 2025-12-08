@@ -26,6 +26,11 @@ CAA defines five layers that turn LLM reasoning into reliable execution.
 
 If you're building agents that need to survive contact with reality, start here. We’ve tested dozens of frameworks, shipped agent systems in production, and learned what works. This project distills that into a blueprint for real-world AI execution — not just chatbots and demos.
 
+Overview
+
+![CAA Layers Overview](assets/caa-architecture-diagram.png)
+
+Diagram
 
 ```mermaid
 %% Cognitive Agentic Architecture – data-flow view

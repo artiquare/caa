@@ -18,7 +18,7 @@ This guide shows how CAA layers map to tools you're likely already using - and w
 |-----------|---------------|--------------|---------------|
 | Context | Typed, validated inputs | Pydantic, TypeScript, Protobuf | Schema versioning, drift detection |
 | Behavior | Explicit planning | LLM APIs, ReAct, Chain-of-Thought | Inspectable plans, deterministic paths |
-| Execution | Tool orchestration | Function calling, MCP, LangChain tools | Contracts, validation, rollback |
+| Execution | Tool orchestration | Function calling, MCP, Code Mode, LangChain tools | Contracts, validation, rollback |
 | State | Persistence | Redis, Postgres, SQLite, DynamoDB | Structured schemas, checkpointing |
 | Collaboration | Human-in-loop | Webhooks, queues, approval systems | Escalation logic, override patterns |
 | Observability | Tracing & metrics | Langfuse, LangSmith, OpenTelemetry | Per-layer boundaries, failure taxonomy |
@@ -41,7 +41,7 @@ flowchart TD
     end
 
     subgraph L3 [Layer 3: Execution]
-      E_Tool[("MCP / LangChain Tools")]
+      E_Tool[("Custom Tools / MCP / LangChain Tools")]
     end
 
     subgraph L4 [Layer 4: State]
@@ -84,10 +84,10 @@ class UserContext(BaseModel):
 
 # Using TypeScript
 interface UserContext {
-  userId: string;
-  industry: string; // NAICS code
-  query: string;
-  metadata: Record<string, any>;
+  userId: str;
+  industry: str; // NAICS code
+  query: str;
+  metadata: Record<str, any>;
   version: "1.2.0";
 }
 ```
@@ -562,7 +562,7 @@ with trace.span(name="planning"):
 **Stack:**
 - Context: Pydantic
 - Behavior: OpenAI function calling
-- Execution: MCP tools (Jira, Slack, email)
+- Execution: Tools handlers (MCP, Jira, Slack, email)
 - State: Postgres
 - Collaboration: Slack webhooks
 - Observability: Langfuse
@@ -577,7 +577,7 @@ support_agent/
 │   ├── planner.py          # OpenAI planning logic
 │   └── templates.py        # Prompt templates
 ├── execution/
-│   ├── tools.py            # MCP tool wrappers
+│   ├── tools.py            # Tool wrappers
 │   └── contracts.py        # Tool validation
 ├── state/
 │   ├── models.py           # State schemas

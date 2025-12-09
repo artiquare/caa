@@ -1,6 +1,13 @@
-# Using standard auth + PII detection
 from typing import Any
-import re
+import datetime
+# Placeholder imports
+from typing import Any as Context, Any as User 
+
+# Mock audit logger for snippet
+class AuditLogger:
+    def write(self, data): pass
+
+audit_log = AuditLogger()
 
 class SecurityLayer:
     def __init__(self, auth_provider, pii_detector):
@@ -8,22 +15,21 @@ class SecurityLayer:
         self.pii = pii_detector
     
     def sanitize_context(self, context: Context) -> Context:
-        # Remove PII before model sees it
-        sanitized = context.copy()
+        sanitized = context.model_copy(deep=True)
         sanitized.query = self.pii.redact(context.query)
+        # Assuming metadata is a dict
         sanitized.metadata = self.pii.redact_dict(context.metadata)
         return sanitized
     
     def authorize_tool(self, tool: str, user: User) -> bool:
-        # Check if user can execute this tool
         return self.auth.has_permission(user, f"tool.{tool}.execute")
     
     def log_action(self, user: User, tool: str, params: dict, result: Any):
-        # Audit trail
         audit_log.write({
             "user": user.id,
             "tool": tool,
-            "timestamp": datetime.now(),
-            "params": self.sanitize_for_audit(params),
+            "timestamp": datetime.datetime.now(),
+            # Assuming sanitize_for_audit exists or is the pii_detector
+            "params": self.pii.redact_dict(params), 
             "success": result.success
         })

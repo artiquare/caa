@@ -64,6 +64,25 @@ You don't need to rewrite everything to get the benefits of Cognitive Agentic Ar
 CAA is a set of architectural patterns, not a rigid framework.
 👉 **Read the [Integration Guide](integration-guide.md)** to see how to organize your existing tools (Pydantic, Redis, Celery) into robust agentic layers.
 
+## ⚡ The 30-Second Concept
+
+CAA replaces "one big prompt" with **specialized layers**:
+
+```python
+# Instead of: response = llm.chat(user_input)
+
+# 1. Context Layer (Validate)
+context = UserContext.from_input(user_input) # Enforces Pydantic Schema
+
+# 2. Behavior Layer (Plan)
+plan = planner.create_plan(context) # Deterministic steps, no execution yet
+
+# 3. Execution Layer (Act)
+result = executor.run(plan) # Safe tool use with contracts
+
+# 4. State Layer (Remember)
+state.save(context, plan, result) # Persist to Redis
+```
 
 ## Who Is This For?
 
@@ -96,7 +115,7 @@ Plus, 2 cross-cutting concern that touches every layer:
 *   [**The Observability Bus**](./layers/06-observability-layer.md) - Provides the full tracing, metrics, and debugging capabilities required to trust the system in production.
 *   **Security** - Authentication, isolation, compliance, governance.
 
-and a Lifecylce concern:
+and a Lifecycle concern:
 *   **Learning & Adaptation** - Continuous improvement from feedback, monitoring, and retraining.
 
 
@@ -129,7 +148,7 @@ These are the design rules that make the Arti Stack robust, modular, and product
 1. [**Small, Focused Agents**](principles/01-small-focused-agents.md)  
    - One agent, one responsibility. Scope tightly.
 
-2. [**Separation of Concerns**](principles/02-sparation-of-concerns.md)
+2. [**Separation of Concerns**](principles/02-separation-of-concerns.md)
    - Divide prompting, tool logic, memory, context, and execution.  
    - No monoliths. No entangled loops.
 
@@ -159,13 +178,12 @@ These are the design rules that make the Arti Stack robust, modular, and product
 
 
 
-## 📍 Coming Soon
+## 📍 Roadmap
 
-- Visual diagrams of the CAA architecture and Arti stack
-- Examples of Arti agents in production use cases
-- A lightweight reference implementation
-
-
+- [x] Visual diagrams of the CAA architecture and Arti stack
+- [x] Integration Guide for existing tools
+- [x] Core Interface Definitions (See /src)
+- [ ] Example: Industrial Support Agent
 
 
 ---

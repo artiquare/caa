@@ -56,6 +56,15 @@ flowchart LR
 ```
 
 
+## 🛠️ Using CAA with Your Existing Stack
+
+**Already have a LangChain, Pydantic, or OpenAI codebase?**
+You don't need to rewrite everything to get the benefits of Cognitive Agentic Architecture.
+
+CAA is a set of architectural patterns, not a rigid framework.
+👉 **Read the [Integration Guide](integration-guide.md)** to see how to organize your existing tools (Pydantic, Redis, Celery) into robust agentic layers.
+
+
 ## Who Is This For?
 
 *   **For Leaders & Product Managers:** Start with our [Product Overview](./product_overview.md) to understand the business value.

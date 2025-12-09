@@ -194,7 +194,7 @@ These are the design rules that make the Arti Stack robust, modular, and product
 Read our [Philosophy](./philosophy.md) to understand the core principles behind CAA and how they evolved from real-world production challenges.
 
 **Deep Dive Blog Series**  
-We’re documenting our journey, lessons, and frameworks in a [multi-part blog series](https://www.artiquare.com/tag/ai-agent-frameworks/). Start with [“The Workforce Challenges in Complex & Technical Industries”](https://www.artiquare.com/ai-workforce-augmentation-workforce-challenges/) for the why — and follow the trail to the how.
+We’re documenting our journey, lessons, and frameworks in a [multi-part blog series](https://www.artiquare.com/blog/). Start with [“The Workforce Challenges in Complex & Technical Industries”](https://www.artiquare.com/ai-workforce-augmentation-workforce-challenges/) for the why — and follow the trail to the how.
 
 ---
 
@@ -203,19 +203,13 @@ We’re documenting our journey, lessons, and frameworks in a [multi-part blog s
 ## 🚀 Get Involved
 
 **Follow the Project**  
-We’re evolving the Arti Agent Stack and Cognitive Agentic Architecture in the open. Watch the repo to stay updated on new principles, design patterns, and implementation examples.
+We’re evolving the Arti Agent Stack and Cognitive Agentic Architecture in the open. 
 
 **See It in Action**  
 We're using this stack to power real-world agentic systems in complex industrial environments. Demos and case studies coming soon — follow us on [LinkedIn](https://www.linkedin.com/company/artiquare) or check out [website](https://www.artiquare.com/) for updates.
 
 **Contribute or Collaborate**  
-Have thoughts, ideas, or real use cases to share? Open an issue, start a discussion, or reach out. We welcome contributors who care about building production-grade AI systems.
-To make the process as smooth as possible, please follow the guidelines [here](./CONTRIBUTING.md).
-
-
-
-> Cognitive Agentic Architecture is more than a pattern — it’s a movement toward intelligent, accountable systems. Build with us.
-
+Have thoughts, ideas, or real use cases to share? Please follow the guidelines [here](./CONTRIBUTING.md).
 
 
 

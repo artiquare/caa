@@ -700,8 +700,7 @@ A: Context (typed input) + Execution (one tool with contract) + Observability (b
 ## Resources
 
 - [CAA Philosophy](philosophy.md) - Why these layers matter
-- [Reference Implementation](link) - Minimal agent showing all layers
-- [Integration Examples](link) - Real code for common tools
-- [Migration Guide](link) - Step-by-step refactoring path
+- TODO: [Reference Implementation](link) - Minimal agent showing all layers
+- TODO: [Integration Examples](link) - Real code for common tools
 
 **Remember:** CAA isn't about replacing your tools. It's about organizing them so your agents survive production.

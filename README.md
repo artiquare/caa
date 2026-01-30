@@ -1,6 +1,6 @@
-# 🧠 Cognitive Agentic Architecture (CAA) & Arti Agent Stack
+# 🧠 Compositional Agentic Architecture (CAA) & Arti Agent Stack
 
-**Arti Agent Stack is built on the principles of Cognitive Agentic Architecture (CAA)** — a modular, observable, collaboration-first approach to intelligent system design.  
+**Arti Agent Stack is built on the principles of Compositional Agentic Architecture (CAA)** — a modular, observable, collaboration-first approach to intelligent system design.  
 This repo introduces the CAA philosophy, outlines its 5-layer architecture, and defines the 10 operational principles behind Arti's implementation.
 
 ## 🚀 Why CAA?
@@ -33,7 +33,7 @@ Overview
 Diagram
 
 ```mermaid
-%% Cognitive Agentic Architecture – data-flow view
+%% Compositional Agentic Architecture – data-flow view
 flowchart LR
     %% Core loop
     Context["Context<br>Layer"] --> Behavior["Behavior<br>Layer"]
@@ -59,7 +59,7 @@ flowchart LR
 ## 🛠️ Using CAA with Your Existing Stack
 
 **Already have a LangChain, Pydantic, or OpenAI codebase?**
-You don't need to rewrite everything to get the benefits of Cognitive Agentic Architecture.
+You don't need to rewrite everything to get the benefits of Compositional Agentic Architecture.
 
 CAA is a set of architectural patterns, not a rigid framework.
 👉 **Read the [Integration Guide](integration-guide.md)** to see how to organize your existing tools (Pydantic, Redis, Celery) into robust agentic layers.
@@ -119,7 +119,7 @@ and a Lifecycle concern:
 *   **Learning & Adaptation** - Continuous improvement from feedback, monitoring, and retraining.
 
 
-## 🔷 Cognitive Agentic Architecture (CAA)
+## 🔷 Compositional Agentic Architecture (CAA)
 
 It defines what agentic systems *should* be: structured, semantic, observable, and designed for human-AI collaboration.
 
@@ -203,7 +203,7 @@ We’re documenting our journey, lessons, and frameworks in a [multi-part blog s
 ## 🚀 Get Involved
 
 **Follow the Project**  
-We’re evolving the Arti Agent Stack and Cognitive Agentic Architecture in the open. 
+We’re evolving the Arti Agent Stack and Compositional Agentic Architecture in the open. 
 
 **See It in Action**  
 We're using this stack to power real-world agentic systems in complex industrial environments. Demos and case studies coming soon — follow us on [LinkedIn](https://www.linkedin.com/company/artiquare) or check out [website](https://www.artiquare.com/) for updates.

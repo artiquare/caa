@@ -1,4 +1,4 @@
-# 📚 Philosophy Behind Cognitive Agentic Architecture
+# 📚 Philosophy Behind compositional Agentic Architecture
 
 > **From industrial trenches to cognitive systems.**
 > CAA was born to solve *execution* problems, not to chase another AI hype‑cycle.

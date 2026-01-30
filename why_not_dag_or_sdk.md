@@ -34,7 +34,7 @@ These SDKs may make for great demos. But when complexity scales — they crack.
 
 ## ✅ What We Do Instead
 
-CAA (Cognitive Agentic Architecture) is our answer:
+CAA (Compositional Agentic Architecture) is our answer:
 
 * **Explicit control flow** (not inferred by the model)
 * **Layered separation** between context, memory, execution, and tools

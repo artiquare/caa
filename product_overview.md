@@ -1,4 +1,4 @@
-# The 5 Layers of Cognitive Agentic Systems - Product View
+# The 5 Layers of Compositional Agentic Systems - Product View
 
 ## Context Layer
 

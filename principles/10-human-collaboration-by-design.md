@@ -1,6 +1,6 @@
 # Human Collaboration by Design
 
-**Principle 10 of the Arti Agent Stack — Cognitive Agentic Architecture**
+**Principle 10 of the Arti Agent Stack — Compositional Agentic Architecture**
 
 Agentic systems are not meant to replace humans — they are built to **collaborate** with them. Real‑world environments are noisy, unpredictable, and full of edge cases. Seamless human‑AI interaction is therefore *essential, not optional*.
 

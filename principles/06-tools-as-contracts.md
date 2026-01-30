@@ -6,7 +6,7 @@
 
 ## Definition
 
-In Cognitive Agentic Architecture (CAA), tools are **contracts** – clearly defined interfaces with specific intent, typed inputs/outputs, and predictable behavior.
+In Compositional Agentic Architecture (CAA), tools are **contracts** – clearly defined interfaces with specific intent, typed inputs/outputs, and predictable behavior.
 
 > Treat tools like APIs, **not** prompts.
 

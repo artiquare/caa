@@ -4,7 +4,7 @@
 
 In too many agent implementations, state is an after‑thought. It lives in loose `dict` objects, fragile context strings, or memory hacks bolted onto looped prompts. That may work for demos—but not for production.
 
-In **Cognitive Agentic Architecture**, **state is a first‑class citizen**.
+In **Compositional Agentic Architecture**, **state is a first‑class citizen**.
 
 ---
 

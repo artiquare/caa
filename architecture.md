@@ -1,4 +1,4 @@
-# 🏗️ The Cognitive Agentic Architecture (CAA) Stack
+# 🏗️ The Compositional Agentic Architecture (CAA) Stack
 
 CAA is a blueprint for production‑grade agentic systems. Each layer owns a single concern, with typed interfaces between them. The result: systems that are modular, observable, and reliable.
 
